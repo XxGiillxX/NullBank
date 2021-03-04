@@ -18,9 +18,14 @@ public class Principal {
 		cc1.setPessoa(cliente);
 		cp1.setPessoa(cliente);
 		em.setPessoa(cliente);
+		cc1.abrirConta();
+		cp1.abrirConta();
+		cp1.bonus();
+		
 		
 		em.emprestimo(cc1,5000, 12);
 		cc1.exibirDados();
+		cp1.exibirDados();
 		
 		
 		
